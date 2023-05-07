@@ -1,11 +1,155 @@
 <!DOCTYPE html>
 <html>
+  <head>
+    <style>
+      * {
+        padding: 0;
+        margin: 0;
+      }
+      /*Element selector*/
+      header,
+      footer {
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        border: 0.5px solid #565555;
+        padding: 10px 0;
+      }
+      footer {
+        margin-top: 15px;
+      }
+      aside {
+        margin-top: 50px;
+        display: none;
+      }
+      section {
+        padding: 15px;
+      }
+      button {
+        cursor: pointer;
+        padding: 15px;
+        display: block;
+        font-size: 20px;
+        background-color: brown;
+        color: #252323;
+        border: none;
+        border-radius: 50%;
+        text-align: center;
+      }
+      button:hover {
+        background-color: #252323;
+        color: brown;
+      }
+      /*-------------------*/
+      /*Class selector*/
+      .first-p {
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: underline;
+        font-style: italic;
+      }
+      .para-1 {
+        padding: 10px;
+        background-color: rgba(250, 183, 183, 0.15);
+        margin: 10px;
+        border-radius: 15px;
+        border: 3px solid #444;
+      }
+      section p:nth-child(2) {
+      }
+      section p:first-child {
+      }
+      section p:last-child {
+      }
+      .button-container {
+        background-color: blue;
+        width: 100%;
+        padding: 10px;
+        display: none;
+        justify-content: center;
+        align-items: center;
+      }
+      /*-------------------*/
+
+      /*ID selector*/
+
+      /*-------------------*/
+    </style>
+  </head>
   <body>
-    <h1>Heading 1</h1>
-    <h2>Heading 2</h2>
-    <h3>Heading 3</h3>
-    <h4>Heading 4</h4>
-    <h5>Heading 5</h5>
-    <h6>Heading 6</h6>
+    <header>Header</header>
+
+    <section>
+      <p class="first-p">What is Lorem Ipsum?</p>
+      <p class="para-1">
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout. The point of
+        using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here, content here', making it
+        look like readable English. Many desktop publishing packages and web
+        page editors now use Lorem Ipsum as their default model text, and a
+        search for 'lorem ipsum' will uncover many web sites still in their
+        infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+      </p>
+      <article>
+        <section>  <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </p></section>
+        <section>  <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </p></section>
+        <section>  <p>
+          It is a long established fact that a reader will be distracted by the
+          readable content of a page when looking at its layout. The point of
+          using Lorem Ipsum is that it has a more-or-less normal distribution of
+          letters, as opposed to using 'Content here, content here', making it
+          look like readable English. Many desktop publishing packages and web
+          page editors now use Lorem Ipsum as their default model text, and a
+          search for 'lorem ipsum' will uncover many web sites still in their
+          infancy. Various versions have evolved over the years, sometimes by
+          accident, sometimes on purpose (injected humour and the like).
+        </p></section>
+
+      
+      </article>
+
+      <div class="button-container">
+        <button>Ok</button>
+      </div>
+    </section>
+
+    <aside>
+      <p>2. What is Lorem Ipsum?</p>
+      <p>
+        It is a long established fact that a reader will be distracted by the
+        readable content of a page when looking at its layout. The point of
+        using Lorem Ipsum is that it has a more-or-less normal distribution of
+        letters, as opposed to using 'Content here, content here', making it
+        look like readable English. Many desktop publishing packages and web
+        page editors now use Lorem Ipsum as their default model text, and a
+        search for 'lorem ipsum' will uncover many web sites still in their
+        infancy. Various versions have evolved over the years, sometimes by
+        accident, sometimes on purpose (injected humour and the like).
+      </p>
+    </aside>
+
+    <footer>Footer</footer>
   </body>
 </html>
