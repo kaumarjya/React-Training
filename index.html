@@ -1,0 +1,454 @@
+<!--<!DOCTYPE html>
+<html>
+  <body>
+    <h1>Heading 1</h1>
+    <h2>Heading 2</h2>
+    <h3>Heading 3</h3>
+    <h4>Heading 4</h4>
+    <h5>Heading 5</h5>
+    <h6>Heading 6</h6>
+  </body>
+</html>
+-->
+<!-- 
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Free Web tutorials">
+  <meta name="keywords" content="HTML,CSS,XML,JavaScript">
+  <meta name="author" content="John Doe">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+
+<p>All meta information goes in the head section...</p>
+
+</body>
+</html>
+-->
+
+<!DOCTYPE html>
+<html>
+  <head> 
+
+    <style>
+      table {
+        font-family: arial, sans-serif;
+        border-collapse: collapse;
+        width: 100%;
+      }
+      
+      td, th {
+        border: 1px solid #dddddd;
+        text-align: left;
+        padding: 8px;
+      }
+      
+  
+      </style>
+  </head>
+  <body>
+    <header>Header</header>
+    <nav>Navigation</nav>
+    <section>
+      <p>Table</p>
+      <table>
+        <thead>
+          <th>Name</th>
+          <th>Address</th>
+          <th>Contact</th>
+        </thead>
+        <tbody>
+          <tr>
+            <td rowspan="2">ABC</td> <td>Kolkata</td>
+          </tr>
+          <tr>
+            <td>ABC</td> <td>0000</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+    <section>
+     
+      <ul>
+        <li>ABC</li>
+        <li>DEF</li>
+      </ul>
+
+      <ol>
+        <li>ABC</li>
+        <li>DEF</li><li>DEF</li><li>DEF</li><li>DEF</li><li>DEF</li>
+      </ol>
+
+    </section>
+    <section>
+     <!--inline - span , label,input
+     block - p,div-->
+
+     <section><input type="text" placeholder="text"/></section>
+     <section><input type="month" placeholder="month"/></section>
+     <section> <input type="password" placeholder="password"/></section>
+
+
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers">
+          <option value="Edge">
+          <option value="Firefox">
+          <option value="Chrome">
+          <option value="Opera">
+          <option value="Safari">
+        </datalist>
+      
+     
+      
+    </section>
+    <section>
+      <label>Choose a browser:</label>
+      <select>
+        <option>
+          Edge
+        </option>
+        <option>
+          Chrome
+        </option>
+      </select>
+    </section>
+    <section>
+      <label for="cars">Choose a car:</label>
+      <select name="cars" id="cars">
+        <optgroup label="Swedish Cars">
+          <option>Volvo</option>
+          <option>Saab</option>
+        </optgroup>
+        <optgroup label="German Cars">
+          <option>Mercedes</option>
+          <option>Audi</option>
+        </optgroup>
+      </select>
+  
+    
+    </section>
+    <section>
+      <iframe width="300px" height="300px"src="https://www.google.com">
+
+      </iframe>
+    </section>
+    <section>
+      <video controls autoplay width="500px">
+        <source src="mov_bbb.mp4" />
+      </video>
+    </section>
+    <section>
+      <details>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+      </details>
+      <details>
+        <summary>Epcot Center</summary>
+        <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+      </details>
+    </section>
+    <section>
+      <a target="_blank" href="https://www.google.com">Google</a>
+    </section>
+    <footer>Footer</footer>
+  </body>
+</html>
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+</head>
+<body>
+
+<h2>HTML Table</h2>
+
+<table>
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+</table>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Cell that spans two rows</h2>
+<p>To make a cell span more than one row, use the rowspan attribute.</p>
+
+<table style="width:100%">
+  <tr>
+    <th>Name</th>
+    <td>Jill</td>
+  </tr>
+  <tr>
+    <th rowspan="2">Phone</th>
+    <td>555-1234</td>
+  </tr>
+  <tr>
+    <td>555-8745</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+</style>
+</head>
+<body>
+
+<h2>Cell that spans two columns</h2>
+<p>To make a cell span more than one column, use the colspan attribute.</p>
+
+<table style="width:100%">
+  <tr>
+    <th colspan="2">Name</th>
+    <th>Age</th>
+  </tr>
+  <tr>
+    <td>Jill</td>
+    <td>Smith</td>
+    <td>43</td>
+  </tr>
+  <tr>
+    <td>Eve</td>
+    <td>Jackson</td>
+    <td>57</td>
+  </tr>
+</table>
+</body>
+</html>
+
+
+-->
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>An Unordered HTML List</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+<h2>An Ordered HTML List</h2>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+</body>
+</html>
+
+
+
+<!--
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>An Unordered HTML List</h2>
+
+<ul>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ul>  
+
+<h2>An Ordered HTML List</h2>
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol> 
+
+</body>
+</html>
+
+
+-->
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The input readonly attribute</h1>
+
+<p>The readonly attribute specifies that an input field should be read-only (cannot be changed):</p>
+
+<form action="/action_page.php">
+  <label for="fname">First name:</label><br>
+  <input type="text" id="fname" name="fname" value="John" readonly><br>
+  <label for="lname">Last name:</label><br>
+  <input type="text" id="lname" name="lname" value="Doe"><br><br>
+  <input type="submit" value="Submit">
+</form>
+
+</body>
+</html>
+
+-->
+
+<!--
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The datalist element</h1>
+
+<form action="/action_page.php" method="get">
+  <label for="browser">Choose your browser from the list:</label>
+  <input list="browsers" name="browser" id="browser">
+  <datalist id="browsers">
+    <option value="Edge">
+    <option value="Firefox">
+    <option value="Chrome">
+    <option value="Opera">
+    <option value="Safari">
+  </datalist>
+  <input type="submit">
+</form>
+
+<p><strong>Note:</strong> The datalist tag is not supported in Safari 12.0 (or earlier).</p>
+
+</body>
+</html>
+-->
+
+<!--
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The optgroup element</h1>
+
+<p>The optgroup tag is used to group related options in a drop-down list:</p>
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+ 
+</body>
+</html>
+
+-->
+
+<!--
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The details element</h1>
+
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+
+</body>
+</html>
+
+-->
