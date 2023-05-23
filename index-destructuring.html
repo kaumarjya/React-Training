@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Destructuring & Spread operator</title>
+
+    <script>
+      let myArr1 = [100, 120, 150, 180, 200];
+
+      // let [a, b, ...c] = myArr1;
+      //  console.log(a);
+      //  console.log(b);
+      // console.log(c);
+
+      //object
+      let name = "MM",
+        city = "Kolkata",
+        dyNamicVal = "inactive";
+
+      let student = { name, city, [dyNamicVal]: true };
+      console.log(student);
+      
+      const studentDetails = {
+        Name: "abc",
+        address: "Kolkata",
+        phno: 9999999,
+      };
+      const studentacademydetail = {
+        steam: "CS",
+        class: "MTech",
+      };
+      const students = {
+        ...studentDetails,
+        ...studentacademydetail,
+      };
+      console.log(students);
+      /*
+            let myarr2 = [];
+            arraySplit();
+            function arraySplit() {
+              for (let x in myArr1) {
+                if (x > 1) {
+                  myarr2.push(myArr1[x]);
+                }
+              }
+            }
+
+            console.log(myarr2);*/
+    </script>
+  </head>
+  <body></body>
+</html>

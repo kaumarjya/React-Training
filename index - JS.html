@@ -1,0 +1,306 @@
+<script>
+
+               alert("I am javscript");
+               console.log("I am javscript");
+
+               var t = "Test"
+               //functional scope
+
+               //let & const  block scope
+
+               function test(){
+                 if(10=10){
+                       var a = 30;
+                       console.log(a);
+                 }
+                 console.log(a)
+               }
+               /*----------------------*/
+               let a =2;let b=3;//assign variable
+
+               console.log(a+b);
+
+
+               /*
+               call function
+               */
+
+             function showName()
+                    let name = "Javascript";
+              showname()
+             console.log(name);
+               /*Variable,function,array,object,
+
+               // Numbers:
+             let length = 16;
+             let weight = 7.5;
+
+             // Strings:
+             let color = "Yellow";
+             let lastName = "Johnson";
+
+             // Booleans
+             let x = true;
+             let y = false;
+
+             // Object:
+             const person = {firstName:"John", lastName:"Doe"};
+
+             // Array object:
+             const cars = ["Saab", "Volvo", "BMW"];
+
+             // Date object:
+             const date = new Date("2022-03-25");
+
+
+             interpole:
+             let text = `Hello World!`;
+
+
+             let firstName = "John";
+             let lastName = "Doe";
+
+             let text = `Welcome ${firstName}, ${lastName}!`;
+             let price = 10;
+             let VAT = 0.25;
+
+             let total = `Total: ${(price * (1 + VAT)).toFixed(2)}`;
+
+             let header = "Templates Literals";
+             let tags = ["template literals", "javascript", "es6"];
+
+             let html = `<h2>${header}</h2><ul>`;
+             for (const x of tags) {
+               html += `<li>${x}</li>`;
+             }
+
+             html += `</ul>`;
+
+
+
+             Array pop:
+
+             const fruits = ["Banana", "Orange", "Apple", "Mango"];
+             fruits.pop();
+
+             Push:
+
+             const fruits = ["Banana", "Orange", "Apple", "Mango"];
+             let length = fruits.push("Kiwi");
+
+             SHift:
+
+             const fruits = ["Banana", "Orange", "Apple", "Mango"];
+             let fruit = fruits.shift();
+
+             unshift:
+
+             const fruits = ["Banana", "Orange", "Apple", "Mango"];
+             fruits.unshift("Lemon");
+
+
+
+             Concat:
+
+             const arr1 = ["Cecilie", "Lone"];
+             const arr2 = ["Emil", "Tobias", "Linus"];
+             const arr3 = ["Robin", "Morgan"];
+             const myChildren = arr1.concat(arr2, arr3);
+
+             array splice:
+
+             const fruits = ["Banana", "Orange", "Apple", "Mango"];
+             fruits.splice(2, 0, "Lemon", "Kiwi");
+
+
+             const fruits = ["Banana", "Orange", "Apple", "Mango"];
+             fruits.splice(2, 2, "Lemon", "Kiwi");
+
+             //Using splice() to Remove Elements
+
+             const fruits = ["Banana", "Orange", "Apple", "Mango"];
+             fruits.splice(0, 1);
+
+             // slice:
+
+             const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+             const citrus = fruits.slice(1);
+
+
+             const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+             const citrus = fruits.slice(3);
+
+             const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+             const citrus = fruits.slice(1, 3);
+
+             const fruits = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+             const citrus = fruits.slice(2);
+
+             //loop
+             const person = {fname:"John", lname:"Doe", age:25};
+
+             let text = "";
+             for (let x in person) {
+               text += person[x];
+             }
+
+
+             arrow function
+         argument=>expression(arg1,arg2)=>expression
+       function square(x){return x*x}
+      const squareA = (x) =>x*x
+
+      let a = [100,200,300];
+      a.forEach(e=>console.log(e));
+
+
+      //Multi line text
+
+      let address=`
+      ABC
+      jajsasja
+      kjsaks
+      `
+
+      //default parameters
+      const sum = (x=1,y=2)=>x+y;
+      let s = sum();
+      console.log(sum());console.log(sum(10,20))
+
+      //template literals
+
+      let p = 20;
+      let u = 20;
+      let str = `value of p ${p} and u ${u}`
+      console.log(str)
+
+      //destructuring array
+
+      let myArr = [22,55];
+      let [x,y] = myArr;
+      console.log(x);console.log(y)
+
+
+      let obj = {
+
+       lang:"JS",
+       db:"Mongodb"
+      }
+      let {lang,db} = obj
+      console.log(lang);console.log(db);
+
+      //spread operator
+
+      let myArr1 = [100,120,150,180,200];
+      let [a,b,...rest] = myArr1;
+       console.log(a); console.log(b); console.log(rest)
+
+       //Enhanced object literals
+       let name ="MM",city="Kolkata",dyNamicVal="active";
+
+       let student  ={
+         name,
+         city,
+         [dyNamicVal]:true
+         display(){
+           console.log(this.name);
+           console.log(this.city)
+         }
+       }
+       console.log(student);student.display();
+
+       //Promise
+
+
+       let prom =  new Promise((resolve,reject)=>{
+                    let flag = true;
+                    setTimeout(()=>{
+
+                      if(flag){
+                        console.log(resolve);
+                      }
+                      else{
+                          console.log(reject);
+                      }
+                    },5000)
+       })
+
+       console.log("Line no 227")
+        prom
+        .then(()=>{console.log('promise is resolved')})
+        .catch(()=>{
+              console.log('promise is reject')
+        })
+        .finally(()=>{
+          console.log('in finally')
+        })
+        console.log("Line no 238")
+
+
+
+        //Class
+
+               class Student{
+
+                constructor(firstName,lastName,city){
+                  this.firstName = firstName;
+                  this.lastName =lastName;
+                  this.city =city
+                  console.log(`object created`);
+
+                }
+                display(){
+                  console.log(`${this.firstName} ${this.lastName} is lived in ${this.city}`);
+
+                }
+
+        }
+        let student1 = new Student("MM","AC","Delhi");
+        let student2 = new Student("PP","JJ","Kolkata");
+        student1.display()
+
+
+        //async/await
+
+                       async function myFuncAsync() {
+  let Value1 = new Promise((resolve, reject) => {
+          setTimeout(() => {
+                  resolve("27")
+          }, 2000)
+  })
+
+  let Value2 = new Promise((resolve, reject) => {
+          setTimeout(() => {
+                  resolve("21 Deg")
+          }, 5000)
+  })
+
+  // Value1.then(alert)
+  // Value2.then(alert)
+  console.log("Fetching Value 1 Please wait ...")
+  let val_1 = await Value1
+  console.log("Fetched Value 1: " + val_1)
+  console.log("Fetching Value 2 Please wait ...")
+  let val_2 = await Value2
+  console.log("Fetched  Value 2 Weather: " + val_2)
+  return [val_1, val_2]
+}
+
+const myFuncAsync2 = async () => {
+  console.log("Hey I am myFuncAsync2 and I am waiting ")
+}
+
+const main1 = async () => {
+  console.log("Welcome to Async/Await")
+  let a = await myFuncAsync()
+  let b = await myFuncAsync2()
+
+}
+main1()
+
+
+               */
+
+
+</script>
+
