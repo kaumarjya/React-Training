@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Async/Await</title>
+    <script>
+      /*async function f() {
+        let promise = new Promise((resolve, reject) => {
+          setTimeout(() => resolve("done!"), 5000);
+        });
+
+        let result = await promise; // wait until the promise resolves (*)
+
+        console.log(result); // "done!"
+      }
+      console.log("I am line 18....");
+      f();
+      console.log("I am line 20....");
+*/
+      //async/await
+
+      async function myFuncAsync() {
+        let Value1 = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("27");
+          }, 5000);
+        });
+
+        let Value2 = new Promise((resolve, reject) => {
+          setTimeout(() => {
+            resolve("21 Deg");
+          }, 8000);
+        });
+
+        // Value1.then(alert)
+        // Value2.then(alert)
+        console.log("Fetching Value 1 Please wait ...");
+        let val_1 = await Value1;
+        console.log("Fetched Value 1: " + val_1);
+        console.log("Fetching Value 2 Please wait ...");
+        let val_2 = await Value2;
+        console.log("Fetched  Value 2 Weather: " + val_2);
+        return [val_1, val_2];
+      }
+
+      const myFuncAsync2 = async (val) => {
+        console.log("Hey I am myFuncAsync2 and I am waiting "+val);
+      };
+
+      const main1 = async () => {
+        console.log("Welcome to Async/Await");
+        let a = await myFuncAsync();
+        console.log(a);
+        let b = await myFuncAsync2(a[0]);
+      };
+      const main2 = () => {
+        console.log(60);
+      };
+
+      main1();
+
+      main2();
+    </script>
+  </head>
+  <body></body>
+</html>
