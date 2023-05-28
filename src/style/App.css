@@ -1,0 +1,12 @@
+
+
+.active{
+    font-weight: bold;
+    font-size: 1.2rem;
+    color: green;
+  }
+  .inactive{
+    font-weight: normal;
+    font-size: 1rem;
+    color: red;
+  }
